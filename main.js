@@ -8,8 +8,9 @@ secretButton.addEventListener ('click', () => {
     const word = document.getElementById("user_input").value;
     let input = word.split("");    
     for (let i=0; i<input.length; i++){
-        let input2 = input.join('');
-const secret = `${input2.charCodeAt(i)}${','}`;
+        // let input2 = input.join('');
+        // const secret = `${input2.charCodeAt(i)}${','}`;
+    const secret = `${word.charCodeAt(i)}${','}`;
 printToDom(secret,"printSecret");
         };
 });
